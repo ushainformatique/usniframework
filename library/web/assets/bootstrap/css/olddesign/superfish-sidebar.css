@@ -1,0 +1,150 @@
+/*.sidebar{
+    background: #1d2939;
+    padding: 0px;
+    height: 100%;
+}
+
+.full-sidebar{
+    height: 100%;
+    z-index: 10;
+    width: 100%;
+}
+
+.sidebar .sf-vertical{
+    width: 100%;
+    padding-left: 0px;
+}
+
+.sidebar .sf-menu{
+    float: left;
+}
+
+.sidebar .sf-menu li{
+    border:none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 0px;
+    background-color: inherit;
+    padding:0px;
+}
+
+.sidebar .sf-menu li > a{
+    width:100%;
+    height: 100%;
+    display: block;
+    padding: 15px 0px 15px 25px;
+}*/
+
+.sidebar{
+    background: #1d2939;
+    padding: 0px;
+    height: 100%;
+}
+
+.full-sidebar{
+    height: 100%;
+    z-index: 10;
+    width: 100%;
+}
+
+/*.sidebar .sf-menu > li {
+    position: relative;
+    display: block;
+}*/
+
+.sidebar .sf-menu{
+    width: 100%;
+}
+
+.sf-menu-item {
+    position: relative;
+    display: block;
+    padding: 10px 15px;
+    margin-bottom: -1px;
+    background-color: #ffffff;
+    border: 1px solid #dddddd;
+}
+
+.sf-menu-item:first-child {
+    border-top-right-radius: 4px;
+    border-top-left-radius: 4px;
+}
+
+.sidebar .sf-menu-item{
+    border:none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 0px;
+    background-color: inherit;
+    padding:0px;
+}
+
+.sidebar .navblock-header > span,
+.sidebar .sf-menu-item > span{
+    width:100%;
+    height: 100%;
+    display: block;
+    border-left: none;
+    border-top: none;
+    padding: 15px 0px 15px 25px;
+}
+
+.sidebar .sf-menu-item > a{
+    border-left: none;
+    border-top: none;
+    padding: 15px 0px 15px 25px;
+}
+
+.sidebar .navblock-header span,
+.sidebar .navblock-header a{
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+.sidebar .sf-menu-item > a:hover{
+    text-decoration: none;
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3 ease;
+    -moz-transition: all 0.3 ease;
+}
+
+.sidebar > ul > li > ul{
+    margin-bottom: 0px;
+}
+
+.sidebar .sf-menu-item li a{
+    padding-left: 45px;
+}
+
+.sidebar .sf-menu-item i{
+    padding-right: 8px;
+}
+
+.sidebar .sf-menu-item a i+i{
+    padding-right: 25px;
+}
+
+.sidebar .sf-menu-item .active > a{
+    color:#fff;
+    font-weight: bold;
+    text-decoration: none;
+}
+/**----colors----------*/
+.sidebar .sf-menu-item > a, .sidebar .sf-menu-item > span{
+    color: #AEB2B7;
+}
+
+.sidebar .sf-menu-item li a:hover{
+    color: #fff;
+}
+
+.sidebar .sf-menu-item > a:hover{
+    background-color: #246eaf;
+}
+
+.sidebar .sf-menu > li > a:hover,
+.sidebar .sf-menu > li > a:focus,
+.sidebar > ul > li > ul{
+    background-color: #428bca;
+}
+.sidebar .sf-menu-item li a{
+    color:#000;
+}

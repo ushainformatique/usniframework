@@ -1,0 +1,900 @@
+/**
+ * @copyright Copyright (C) 2016 Usha Singhai Neo Informatique Pvt. Ltd
+ * @license http://www.gnu.org/licenses/agpl-3.0.html
+ */
+body{
+    font-family: "Open Sans";
+    background-color:#ffffff;
+    color: #34383c;
+    border: 0;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    padding-top: 50px;
+    font-size: 14px;
+}
+
+.top-space{
+    margin-top: 10px;
+}
+
+#page-wrapper{
+
+}
+
+.page-content{
+    margin: 0 25px 0 265px;
+    position: relative;
+}
+
+.breadcrumb-row{
+    margin: 18px 0 35px;
+    position: relative;
+    background-color: #fcfcfc;
+    border: 1px solid #e5e5e5;
+}
+
+/**
+ * Navigation bar
+ */
+.navbar{
+    background-color: #4FA2C2;
+    border: none;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0px;
+    margin-bottom: 0px;
+    z-index:1000;
+}
+
+.navbar .navbar-brand{
+    font-size: 21px;
+    line-height: 21px;
+}
+
+.navbar-header .navbar-nav > li{
+    margin-right: 1px;
+}
+
+.navbar-header .navbar-nav > li > a i{
+    color: rgba(255, 255, 255, 0.75);
+    font-weight: normal;
+}
+.navbar-header .navbar-nav > li > a:hover i,
+.navbar-header .navbar-nav > li > a:hover{
+    color: #fff;
+}
+
+.navbar-default .navbar-toggle{
+    margin-right: 41px;
+    background-color: rgba(0,0,0,.2);
+    border: none;
+    height: 33px;
+    padding: 8px 10px;
+    color:#fff;
+}
+
+ul.navbar-right > li{
+    float: left;
+}
+
+a.sidebar-toggle{
+    position: absolute;
+    right: 0;
+    top: 8px;
+    line-height: 1;
+    color: #fff;
+    padding: 9px 10px;
+    background-color: rgba(0,0,0,.2);
+    height: 33px;
+    border-radius:4px;
+}
+
+
+.sidebar-toggle:hover,
+.sidebar-toggle:focus,
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+    background-color: #4388A3;
+}
+
+.user-info {
+    max-width: 100px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    text-align: left;
+    line-height: 16px;
+}
+/*
+ * ----------------------------------------------Form css--------------------------------------
+ */
+.uiform .input-group .select2-container.form-control{
+    position: absolute;
+    display: block;
+    width: 97%;
+    padding: 0px;
+    border:none;
+    float: none;
+}
+
+.form-group .input-group{
+    padding-right: 20px;
+}
+
+.form-group label{
+    font-weight: normal;
+}
+
+.form-group.login-group{
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.login-group label{
+    font-weight: bold;
+}
+
+.login-group .checkbox label{
+    font-weight: normal;
+}
+
+.login-panel{
+    margin-bottom: 55px;
+}
+
+.form-horizontal label .required{
+    color:#ff2700;
+}
+
+label.required:after {content: " *"; color: red;}
+
+.panel{
+    border-radius: 2px;
+}
+
+.panel-content{
+    border-color: #dddddd;
+    /*border-radius: 0px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;*/
+}
+
+.panel-content > .panel-heading{
+    /*color: #495b79;*/
+    border-color: #ddd;
+    background-color: #fafafa;
+}
+
+.panel-title {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.input-group .select2-container .select2-choice{
+    line-height: 32px;
+    height: 32px;
+}
+
+ul.breadcrumb {
+    /*    background: #FFF;*/
+    /*border-bottom: 1px solid #CCC;
+    border-left: 3px solid #F1501A;*/
+    /*    margin: 0px -15px 15px;*/
+    /*    margin: 35px 0px 0px 0px;*/
+    border-radius: 0px;
+    margin:0px;
+    background: 0 0;
+    padding: 9px 12px 10px;
+}
+ul.breadcrumb li a{
+    color: #f1501a;
+}
+.onecolumn .login{
+    padding-top: 60px;
+}
+
+.onecolumn .login .panel-body{
+    padding-top: 20px;
+    padding-bottom: 0px;
+}
+
+.uiform .input-group .form-control{
+    border-bottom-right-radius:4px;
+    border-top-right-radius:4px;
+}
+
+.uiform .text-danger{
+    font-style: italic;
+    font-size: 12px;
+}
+
+.uiform .input-group .form-control:first-child, .uiform .input-group-addon:first-child{
+    border-bottom-right-radius: 4px;
+    border-top-right-radius: 4px;
+}
+
+.uiform .input-group input[type="checkbox"]{
+    height:13px;
+    box-shadow: none;
+    margin-top: 8px;
+}
+
+.uiform .sidebarblockcontainer .form-group{
+    margin-left: 14%;
+}
+
+.uiform .sidebarblockcontainer .form-control{
+    display: inline-block;
+}
+
+.compare-list-actions{
+    margin-top: 76px;
+    margin-left: 4px;
+    width: 50px;
+}
+
+.panel-search{
+    border-color: #dddddd;
+    border-radius: 0px;
+}
+
+.uiform .input-group .input-append{
+    border-bottom-right-radius:0px;
+    border-top-right-radius:0px;
+}
+
+.uiform .input-group .input-append:first-child{
+    border-bottom-right-radius: 0px;
+    border-top-right-radius: 0px;
+}
+
+/*------------------------------Grid view css-----------------------------*/
+
+.grid-container .page-header{
+    margin-top: 10px;
+    margin-bottom: 16px;
+    padding: 6px 15px;
+    border: 1px solid #e5e5e5;
+    background-color: #fcfcfc;
+}
+
+.grid-container .page-title {
+    display: inline-block;
+    width: 50%;
+    margin-top: 5px;
+    font-size: 17px;
+    margin-bottom: 5px;
+}
+
+.grid-container .summary{
+    display: inline-block;
+    text-align: right;
+    width: 50%;
+    float: none;
+    margin:0px;
+}
+
+.grid-view .panel-content{
+    border-color: #ccc;
+    border-radius: 0px;
+}
+
+.panel-body .row .table th:first-child, .panel-body .row .table td:first-child{
+    padding-left: 20px;
+}
+
+.grid-view{
+    padding: 0px;
+}
+
+.grid-view .panel-footer{
+    height: 58px;
+    position: relative;
+    text-align: center;
+}
+
+.grid-view .panel-body, .list-view .panel-body{
+    padding: 0px 0px;
+}
+
+.grid-view .panel-body .table, .list-view .panel-body .table{
+    margin-bottom: 0px;
+}
+
+.grid-view .pagination, .list-view .pagination{
+    position: absolute;
+    margin-top: 0px;
+    top:0px;
+}
+
+/*.grid-view .pagination .next > a, .list-view .pagination .next > a{
+    padding: 0px;
+    border:0px;
+    background-color: #f5f5f5;
+}*/
+
+.grid-view-loader, .list-view-loader{
+    background:url(../../gifs/loading.gif) no-repeat;
+    background-position:  center center;
+    opacity: 1;
+}
+
+.grid-view-loader *, .list-view-loader *, .button-loader * {
+    opacity: .8;
+}
+
+.button-loader{
+    background:url(../../gifs/loading.gif) no-repeat;
+    background-position:  left center;
+    opacity: 1;
+}
+
+.grid-view-loader *, .list-view-loader * {
+    opacity: .8;
+}
+
+.table > tbody > tr > td > a{
+    color: #34383c;
+}
+
+.table > thead > tr > th > a.sort-link{
+    color: #34383c;
+    /*    color: #36A004;*/
+}
+
+.table > thead > tr > th > a.sort-link .caret{
+    display: none;
+}
+
+.table > thead > tr > th > a.sort-link.asc .caret{
+    border-top: 0;
+    border-bottom: 4px solid;
+    display: inline-block;
+}
+
+.table > thead > tr > th > a.sort-link.desc .caret{
+    border-bottom: 0;
+    border-top: 4px solid;
+    display: inline-block;
+}
+
+.table > thead > tr > th {
+    border:none;
+    /*    color: #36A004;*/
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.table > tbody > tr > td.button-column{
+    width: 10%;
+}
+
+.grid-summary{
+    text-align: right;
+    padding: 7px 10px 7px 0px;
+    border-bottom: 1px solid #ccc;
+    margin-top: 0px;
+    background-color: #f5f5f5;
+}
+
+.listSummaryRow{
+    text-align: right;
+    padding: 10px 10px 10px 0px;
+}
+/*-------------------------Action toolbar---------------------------*/
+
+.action-toolbar{
+    margin-bottom: 15px;
+}
+.action-toolbar a.btn:hover{
+    background: #F1501A;
+    color: #fff;
+}
+
+/*---------------------Detail View---------------------------------*/
+.detail-container > .page-header{
+    /*border: 1px solid #617B8D;
+    background-color: #7A92A3;
+    color: #fff;*/
+    margin-top: 10px;
+    margin-bottom: 15px;
+    padding: 6px 15px;
+    border: 1px solid #e5e5e5;
+    background-color: #fcfcfc;
+}
+
+.detail-container .page-title {
+    display: inline-block;
+    width: 50%;
+    margin-top: 5px;
+    font-size: 19px;
+    margin-bottom: 5px;
+}
+
+.tabbed-detail-view .table-detail tr:first-child td,
+.tabbed-detail-view .table-detail tr:first-child th
+{
+    border-top: 0px;
+}
+
+.table-detail{
+    border-left: 1px solid #dddddd;
+    border-right: 1px solid #dddddd;
+    border-bottom: 1px solid #dddddd;
+}
+
+.table-detail > tbody > tr > th{
+    width: 25%;
+}
+
+.detail-view-title{
+    margin-top: 0px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #e5e5e5;
+    float: left;
+    width: 100%;
+}
+
+.detail-view-title h3{
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.detail-view-title .btn-group{
+    margin-bottom: 5px;
+}
+
+.table-detail > tbody > tr:nth-child(odd) > th.detail-view-subheader{
+    text-align: center;
+    color: white;
+    font-size: 14px;
+    background: #1d2939;
+}
+/*-----------------Comment css---------------------*/
+
+.comments-list{
+    padding-left: 15px;
+}
+/*-----------------Install Panel---------------------*/
+
+.panel-install{
+    margin-top: 40px;
+}
+
+.panel-install .table{
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+.panel-install .label{
+    text-transform: uppercase;
+}
+
+.panel-install .table{
+    margin-bottom: 0px;
+}
+
+.installinstructions{
+    margin-top: 10px;
+}
+
+
+/**---------Buttons---------*/
+
+.btn{
+    font-size: 12px;
+    margin-left: 10px;
+}
+
+.table > tbody > tr > td > a.btn-primary{
+    color: #ffffff;
+}
+
+
+/**------Checkboxes----------*/
+
+.form-horizontal .selectAllCheckBoxLabel,
+.form-horizontal .unselectAllCheckBoxLabel{
+    margin-bottom: 5px;
+}
+
+.selectAllCheckBoxLabel input[type="checkbox"],
+.unselectAllCheckBoxLabel input[type="checkbox"]{
+    margin-top:3px;
+}
+
+.form-horizontal .checkbox{
+    margin-left: 15%;
+}
+
+.form-horizontal .login-group .checkbox{
+    margin-left: 0px;
+}
+
+.form-horizontal .form-group.form-checkbox-group{
+    margin-bottom: 0px;
+}
+
+.form-horizontal .checkbox input[type="checkbox"],
+.form-horizontal .checkbox-inline input[type="checkbox"] {
+  margin-top: 2px;
+}
+
+.form-horizontal .form-group.field-loginform-rememberme{
+    margin-top: -15px;
+}
+
+.form-horizontal .checkbox.bulk-edit-chk{
+    margin-left: 0px;
+}
+/**---------Multiple select-------*/
+
+.input-group .select2-container{
+    display: block;
+}
+
+.form-group .select2-offscreen{
+    display: none;
+}
+
+/**---------Comment Box CSS---------*/
+
+.comments-list > li.media{
+    margin-bottom: 35px;
+    list-style: none;
+}
+.comments-list .media > .pull-left {
+    margin-right: 20px;
+}
+.comments-list .media-object{
+    border: 2px solid #E8E8E8;
+    padding: 2px;
+}
+.comments-list h3.media-heading{
+    margin-top: 10px !important;
+    color: #333 !important;
+    line-height: 17px !important;
+}
+.comments-list .media-heading .says{
+    color: #666;
+    font-size: 15px;
+}
+.comments-list .comment-date{
+    color: #FF7200;
+    font-size: 12px;
+    font-weight: normal;
+}
+.comments-list .btn-link, .comments-list i{
+    color: #777;
+}
+.comments-list .comments-action{
+    border-top: 1px solid #E8E8E8;
+    border-bottom: 1px solid #E8E8E8;
+    padding: 5px 0px;
+}
+.comments-message-container{
+    margin-bottom: 10px;
+}
+.comments-message-container p{
+    color: #626262;
+    margin:0px;
+}
+.comments-list .comments-action li:hover i,
+.comments-list .comments-action a:hover{
+    color: #75030b;
+}
+.comments-message-footer .textarea, .comments-message-container .textarea{
+    background: #f2f2f2;
+    height: 100px;
+    margin: 5px 0px;
+    padding: 10px;
+}
+
+.comment-deleted{
+    margin: 1px;
+}
+
+/*--------Tabbed form---*/
+.tab-content-form{
+    margin-top: 10px;
+}
+
+/*-------Dashboard-----*/
+.panel-dashboard{
+    border:none;
+    background-color: #fff;
+}
+.panel-dashboard .grid-container .page-header {
+    background: #4e5154;
+    border: none;
+    margin-top: 0px;
+    margin-bottom: 3px;
+    padding: 6px 15px;
+}
+.panel-dashboard .grid-container .page-title{
+    color: #fff;
+    font-size: 18px;
+    width: 100%;
+}
+.panel-dashboard .grid-view{
+/*    padding: 15px;
+    border-left: 1px solid #cccccc;
+    border-right: 1px solid #cccccc;
+    border-bottom: 1px solid #cccccc;*/
+    margin-bottom: 20px;
+}
+.panel-dashboard .grid-view .panel{
+    margin-bottom: 0px;
+}
+@media(max-width:768px){
+    .panel-dashboard .grid-view .panel {
+        border:none;
+    }
+}
+
+.panel-browse{
+    padding: 15px 15px 5px 15px;
+}
+/**------list group-----**/
+.input-group .form-control-listbox{
+    width: 90%;
+}
+
+#footer{
+    font-size: 11px;
+    padding: 10px 10px 12px;
+    margin: 0px 0px;
+    border-top: 1px solid #ddd;
+    background-color: #F6F7F0;
+}
+
+/**----Auth----**/
+.permissionsContainer .checkbox-inline + .checkbox-inline{
+    margin-left: 0px;
+}
+
+.permissionsContainer .checkbox-inline{
+    margin-right: 9px;
+}
+
+.permissionsContainer .selectAllCheckBoxLabel{
+    margin-left: 15px;
+}
+
+.modulePermissionsContainer{
+    margin-bottom: 15px;
+}
+
+.modulePermissionsContainer label{
+    font-weight: normal;
+}
+.authpermissioncheckbox{
+    width:200px;
+}
+
+/**----Modal css----**/
+.grid-container .modal-content{
+    border-radius: 8px;
+}
+.grid-container .modal-header{
+    background: #4FA2C2;
+    border-radius: 6px 6px 0px 0px;
+    color: #fff;
+}
+.grid-container .modal-header .close{
+    opacity: 0.8;
+    color: #fff;
+    margin-top: -9px;
+}
+
+#page-wrapper .alert-success{
+    border-color: #88c425;
+}
+
+.list-view{
+    padding: 15px 0px;
+}
+
+.feature-callout {
+    margin: 0 0 35px;
+    padding: 20px;
+    border-left: 3px solid #eee;
+}
+
+.feature-callout-danger {
+    background-color: #fdf7f7;
+    border-color: #D65C4F;
+}
+
+.feature-callout h5{
+    margin-bottom:5px;
+    font-size:20px;
+}
+
+.feature-callout-danger h5{
+    color:#D65C4F;
+}
+
+.navbar-header {
+    position: relative;
+    min-width: 203px;
+    margin-left: 25px;
+    margin-right: 15px;
+}
+
+@media (min-width: 768px){
+    .navbar-nav.navbar-right:last-child {
+        margin-right: 25px;
+    }
+}
+
+.navbar-collapse{
+    margin: 0px;
+}
+
+.navbar-collapse > li{
+    float: left;
+}
+
+a{
+    cursor: pointer;
+}
+
+@media (max-width: 991px){
+    .page-content {
+        margin: 0 25px!important;
+    }
+}
+
+.extra-input-append{
+    margin-right: -41px;
+}
+
+.modal-footer .button-loader{
+    background-position: center center;
+}
+
+.bulk-edit-form{
+    margin-top: 20px;
+}
+
+.bulk-edit-chk{
+    text-align: right;
+}
+
+.input-group-addon.input-group-select-addon{
+    background: none;
+    border: none;
+    padding: 0px 21px 0px 31px;
+}
+
+.modal-body .select2-container .select2-choice{
+    overflow: visible;
+}
+
+/* Sorting*/
+/* add sorting icons to gridview sort links */
+a.asc:after, a.desc:after {
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    font-family: 'Glyphicons Halflings';
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+    padding-left: 5px;
+}
+
+a.asc:after {
+    content: /*"\e113"*/ "\e151";
+}
+
+a.desc:after {
+    content: /*"\e114"*/ "\e152";
+}
+
+.sort-numerical a.asc:after {
+    content: "\e153";
+}
+
+.sort-numerical a.desc:after {
+    content: "\e154";
+}
+
+.sort-ordinal a.asc:after {
+    content: "\e155";
+}
+
+.sort-ordinal a.desc:after {
+    content: "\e156";
+}
+
+.grid-view th {
+    white-space: nowrap;
+}
+
+.bootstrap-tabs > .tab-content{
+    margin-top: 10px;
+}
+
+/*Selectize css*/
+.input-group .form-control .selectize-dropdown, .input-group .form-control .selectize-dropdown.form-control{
+    position: absolute;
+}
+
+/*Invoice css*/
+/* # Invoice template styles
+================================================== */
+
+.invoice-header ul { 
+  margin-bottom: 0; 
+}
+.invoice-header { 
+  margin-bottom: 20px; 
+  padding-bottom: 20px; 
+  border-bottom: 3px double #e5e5e5; 
+}
+.invoice-header h3 { 
+  margin-bottom: 0;
+  margin-top: 8px; 
+/*  font-weight: 400;*/
+}
+.invoice-header span { 
+  color: #999; 
+}
+
+.invoice-details { 
+  float: right; 
+  width: 260px; 
+  margin-top: 4px; 
+  max-width: 100%; 
+}
+.invoice-details strong { 
+  float: right; 
+  margin-left: 20px; 
+}
+
+.invoice-payment { 
+  border-bottom: 3px double #e5e5e5; 
+  margin-bottom: 20px; 
+  padding-bottom: 20px; 
+}
+.invoice-payment .table h6 { 
+  margin-bottom: 0; 
+}
+.chosen-payment span { 
+  color: #D65C4F; 
+  text-decoration: underline; 
+  font-weight: 600; 
+}
+.chosen-payment a { 
+  font-size: 11px; 
+  color: #999; 
+}
+
+.invoice-status { 
+  margin-top: 12px; 
+  padding-top: 12px; 
+  border-top: 1px solid #eee; 
+}
+
+.invoice-number { 
+  width: 100px; 
+}
+.invoice-date { 
+  width: 150px; 
+}
+.invoice-expand { 
+  width: 60px; 
+}
+.invoice-amount { 
+  width: 170px; 
+}
+
+@media (max-width: 768px) {
+  .invoice-details { 
+    float: none; 
+    margin-top: 12px; 
+  }
+}

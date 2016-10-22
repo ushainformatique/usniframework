@@ -1,0 +1,166 @@
+/**
+ * @copyright Copyright (C) 2016 Usha Singhai Neo Informatique Pvt. Ltd
+ * @license http://www.gnu.org/licenses/agpl-3.0.html
+ */
+.sidebar{
+    display:block;
+    background: #2C3A42;
+    padding: 0px;
+    min-height: 720px;
+    width:240px;
+    top:0;
+    left:0;
+    position:absolute;
+    z-index: 10;
+}
+
+@media (min-width: 768px){
+    .sidebar-narrow .sidebar{
+        width: 50px;
+    }
+}
+
+@media (max-width: 768px){
+    .sidebar-wide .sidebar, .sidebar-narrow .sidebar{
+        max-height: 340px;
+        width: 100%;
+        min-height: 0;
+        overflow-x: visible;
+        overflow-y: auto;
+        left: 0;
+        right: 0;
+    }
+}
+
+@media (min-width: 768px){
+    .sidebar-narrow .page-content {
+        margin: 0px 25px 0px 80px!important;
+    }
+}
+
+.sidebar-narrow .sidebar-item-content{
+    display: none;
+}
+
+@media (max-width: 768px){
+    .sidebar-narrow .sidebar-item-content{
+        display: block;
+    }
+}
+
+.sidebar-content{
+    margin-top:54px;
+    position:relative;
+}
+
+@media (max-width: 768px){
+    .sidebar-narrow .sidebar-collapse, .sidebar-wide .sidebar-collapse{
+        left: 0;
+        height: 0px;
+    }
+}
+
+.sidebar-collapse .page-content {
+    margin: 0px 25px !important;
+}
+
+.sidebar-wide .sidebar .fa-arrow:before{
+    content: "\f104";
+}
+
+.sidebar-wide .sidebar .open > a > .fa-arrow:before{
+    content: "\f107";
+}
+
+.sidebar .list-group{
+    margin-bottom: 0px;
+}
+
+.sidebar .list-group-item{
+    border:none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 0px;
+    background-color: inherit;
+    padding:0px;
+}
+
+.sidebar .list-group-item > a{
+    padding: 15px 0px 15px 25px;
+}
+
+.sidebar .navblock-header span,
+.sidebar .navblock-header a{
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+.sidebar .list-group-item > a:hover{
+    text-decoration: none;
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3 ease;
+    -moz-transition: all 0.3 ease;
+}
+
+.sidebar > .sidebar-content > ul > li > ul > li > ul{
+    margin-bottom: 0px;
+    margin-left:15px;
+}
+
+.sidebar .list-group-item li a{
+    padding-left: 76px;
+}
+
+.sidebar .list-group-item i{
+    padding-right: 8px;
+}
+
+.sidebar .list-group-item a i+i{
+    padding-right: 25px;
+}
+
+.sidebar .nav li.active > a{
+    color:#fff;
+    /*    font-weight: bold;*/
+    text-decoration: none;
+    background-color: #65B688;
+}
+
+.sidebar .navblock-header > span,
+.sidebar .navblock-header a{
+    padding: 15px 0px 15px 15px;
+}
+
+.sidebar .navblock-header > ul > li > a{
+    padding: 15px 0px 15px 45px;
+}
+
+.sidebar-narrow .nav li > ul {
+    width: 220px;
+    border-radius: 0 2px 2px 0;
+    -webkit-border-radius: 0 2px 2px 0;
+    -moz-border-radius: 0 2px 2px 0;
+    border-left: 1px solid rgba(255,255,255,.1);
+    margin-left: -1px;
+    position: absolute;
+    display: none;
+    top: 0;
+    left: 100%;
+    background: #2D3A42;
+}
+
+.sidebar-narrow .nav li > ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.sidebar-narrow .nav li:hover > ul{
+    display: block;
+}
+
+@media (min-width: 768px){
+    .sidebar-wide .sidebar .list-group-item i.fa-lg {
+        width: 32px;
+        float:left;
+    }
+}
