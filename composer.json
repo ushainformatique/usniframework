@@ -1,0 +1,15 @@
+{
+    "name": "ushainformatique/usniframework",
+    "description": "Base framework written on top of Yii2 used for developing any web application",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Mayank Singhai",
+            "email": "mayank.singhai@ushainformatique.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "php": ">=5.4.0"
+    }
+}
