@@ -14,8 +14,8 @@ $username           = '{{dbUserName}}';
 $password           = '{{dbPassword}}';
 $debug              = false;
 $environment        = '{{environment}}';
-$vendorPath         = '..';
-$backendVendorPath  = '..' . DIRECTORY_SEPARATOR . '..';
+$vendorPath         = '.';
+$backendVendorPath  = '..';
 //App details
 $frontAppId         = 'front-app';
 $frontAppName       = 'Front Application';

@@ -9,4 +9,3 @@ $smtpSettings = array('smtpHost'     => '',
                      'smtpUsername' => '',
                      'smtpPassword' => ''
                      );
-?>
