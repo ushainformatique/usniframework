@@ -273,32 +273,11 @@ class DefaultController extends UiAdminController
     /**
      * @inheritdoc
      */
-    protected function resolveModel(& $config = [])
-    {
-        $scenario       = ArrayUtil::getValue('scenario', $config, 'create');
-        $id             = ArrayUtil::getValue('id', $config);
-        $modelClassName = ArrayUtil::getValue('modelClassName', $config, $this->resolveModelClassName());
-        $model          = parent::resolveModel($config);
-        $user           = UsniAdaptor::app()->user->getUserModel();
-        if($scenario == 'changepassword')
-        {
-            $model = $this->loadModel($modelClassName, $id);
-            if(UsersPermissionUtil::doesUserHavePermissionToPerformAction($model, $user, 'user.changeotherspassword') === false) //checkUpdateOrDeleteAccessByUser
-            {
-                throw new ForbiddenHttpException(\Yii::t('yii','You are not authorized to perform this action.'));
-            }
-        }
-        return $model;
-    }
-
-    /**
-     * @inheritdoc
-     */
     protected static function getNonPermissibleActions()
     {
         $nonPermissibleActions = parent::getNonPermissibleActions();
     
-        return ArrayUtil::merge($nonPermissibleActions, ['validate-email-address']);
+        return ArrayUtil::merge($nonPermissibleActions, ['validate-email-address', 'change-status']);
     }
 
     /**
@@ -342,9 +321,14 @@ class DefaultController extends UiAdminController
      */
     public function actionChangeStatus($id, $status)
     {
+        $loggedInUser = UsniAdaptor::app()->user->getUserModel();
         $user = User::findOne($id);
-        $user->status = $status;
-        $user->save();
+        $isAllowed = UsersPermissionUtil::doesUserHavePermissionToPerformAction($user, $loggedInUser, 'change-status');
+        if($isAllowed)
+        {
+            $user->status = $status;
+            $user->save();
+        }
         return $this->renderGridView();
     }
     
