@@ -116,10 +116,10 @@ class DefaultController extends UiAdminController
             if(UserUtil::validateAndSaveUserData($model))
             {
                 $model->user->newPassword = $model->user->password;
-                if($model->user->status == User::STATUS_PENDING && $scenario == 'create')
+                if($scenario == 'create')
                 {
                     $model->sendMail();
-                    FlashUtil::setMessage('userregistration', UsniAdaptor::t('userflash', 'The user is successfully registered with the system. An activation email has been sent at registered email address.'));
+                    FlashUtil::setMessage('userregistration', UsniAdaptor::t('userflash', 'The user is successfully registered with the system.'));
                 }
                 else
                 {

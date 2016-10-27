@@ -13,6 +13,7 @@ use usni\library\utils\BulkScriptUtil;
 /**
  * UiGridViewActionButtonGroup class file. Consists of action buttons corresponding to actions that
  * can be performed on the grid.
+ * 
  * @package usni\library\extensions\bootstrap\widgets
  */
 class UiGridViewActionButtonGroup extends \yii\bootstrap\ButtonGroup

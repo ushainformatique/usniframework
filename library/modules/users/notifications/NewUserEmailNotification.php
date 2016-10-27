@@ -112,4 +112,3 @@ class NewUserEmailNotification extends UiEmailNotification
         return '/users/default/validate-email-address';
     }
 }
-?>

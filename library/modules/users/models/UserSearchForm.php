@@ -10,6 +10,7 @@ use yii\data\ActiveDataProvider;
 use usni\library\modules\users\models\User;
 use usni\library\modules\auth\managers\AuthManager;
 use usni\UsniAdaptor;
+use yii\data\Sort;
 
 /**
  * UserEditForm class file
@@ -71,7 +72,11 @@ class UserSearchForm extends Model
         $dataProvider = new ActiveDataProvider([
             'query' => $query,
         ]);
-
+        
+        $sort = new Sort(['attributes' => ['username', 'timezone', 'status', 'person.email', 'person.firstname', 'person.lastname',
+                                            'address.address1']]);
+        $dataProvider->setSort($sort);
+        
         // load the seach form data and validate
         if (!$this->validate())
         {

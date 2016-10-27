@@ -222,4 +222,3 @@ class DefaultController extends UiAdminController
         return $this->redirect(UsniAdaptor::createUrl('service/default/index'));
     }
 }
-?>

@@ -17,6 +17,7 @@ use usni\library\utils\FlashUtil;
 use usni\library\modules\users\models\User;
 /**
  * AuthAssignmentsEditView class file.
+ * 
  * @package usni\library\modules\auth\views
  */
 class AuthAssignmentsEditView extends UiBootstrapEditView
@@ -202,4 +203,3 @@ class AuthAssignmentsEditView extends UiBootstrapEditView
                           ");
     }
 }
-?>

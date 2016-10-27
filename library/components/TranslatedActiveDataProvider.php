@@ -9,6 +9,7 @@ use yii\db\ActiveQueryInterface;
 use usni\library\utils\ArrayUtil;
 /**
  * Provides data for the translated active records.
+ * 
  * @package usni\library\components
  */
 class TranslatedActiveDataProvider extends \yii\data\ActiveDataProvider

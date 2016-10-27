@@ -11,6 +11,7 @@ use usni\library\modules\notification\models\NotificationTemplate;
 use usni\UsniAdaptor;
 /**
  * NotificationTemplateBulkEditView class file
+ * 
  * @package usni\library\modules\notification\views
  */
 class NotificationTemplateBulkEditView extends UiBootstrapBulkEditView

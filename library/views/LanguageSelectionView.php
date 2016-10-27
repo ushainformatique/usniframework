@@ -11,6 +11,7 @@ use usni\library\components\UiHtml;
 use usni\UsniAdaptor;
 use usni\fontawesome\FA;
 use yii\bootstrap\Dropdown;
+use usni\library\utils\ArrayUtil;
 /**
  * LanguageSelectionView class file.
  * 
@@ -35,7 +36,11 @@ class LanguageSelectionView extends UiView
             return null;
         }
         
-        $data           = LanguageManager::getList();
+        $data           = $this->getData();
+        if(count($data) == 1 && ArrayUtil::getValue($data, 'en-US') != null)
+        {
+            return null;
+        }
         $selection      = $this->getSelectedLanguage();
         $headerLink     = UiHtml::tag('span', $data[$selection]) . "\n" .
                           FA::icon('caret-down');
@@ -54,6 +59,16 @@ class LanguageSelectionView extends UiView
         return $this->wrapContent($content);
     }
     
+    /**
+     * Gets data
+     * @return array
+     */
+    protected function getData()
+    {
+        return LanguageManager::getList();
+    }
+
+
     /**
      * Wrap content
      * @param string $content

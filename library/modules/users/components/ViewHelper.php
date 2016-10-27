@@ -18,4 +18,10 @@ class ViewHelper extends BaseViewHelper
      * @var string 
      */
     public $loginView     = 'usni\library\modules\users\views\LoginView';
+    
+    /**
+     * User edit view.
+     * @var string 
+     */
+    public $userEditView     = 'usni\library\modules\users\views\UserEditView';
 }

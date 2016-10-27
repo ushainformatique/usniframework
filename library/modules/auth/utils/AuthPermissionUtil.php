@@ -10,6 +10,7 @@ use usni\UsniAdaptor;
 use usni\library\modules\auth\models\Group;
 /**
  * AuthPermissionUtil class file.
+ * 
  * @package usni\library\modules\auth\utils
  */
 class AuthPermissionUtil extends PermissionUtil
@@ -42,4 +43,3 @@ class AuthPermissionUtil extends PermissionUtil
         return $permissions;
     }
 }
-?>

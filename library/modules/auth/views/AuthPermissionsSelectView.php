@@ -13,6 +13,7 @@ use yii\helpers\Inflector;
 use usni\library\modules\auth\managers\AuthManager;
 /**
  * AuthPermissionsSelectView class file.
+ * 
  * @package usni\library\modules\auth\views
  */
 class AuthPermissionsSelectView extends UiView
