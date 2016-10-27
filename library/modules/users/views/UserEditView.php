@@ -30,8 +30,7 @@ class UserEditView extends \usni\library\views\MultiModelEditView
                             'status'          => UiHtml::getFormSelectFieldOptionsWithNoSearch(User::getStatusDropdown()),
                             'timezone'        => UiHtml::getFormSelectFieldOptions(TimezoneUtil::getTimezoneSelectOptions(),
                                                                                    [], ['placeholder' => UiHtml::getDefaultPrompt()]),
-                            'groups'          => UiHtml::getFormSelectFieldOptions($group->getMultiLevelSelectOptions('name', 0, '-', true, $this->shouldRenderOwnerCreatedModels()),
-                                                                                   [], ['multiple' => true]),
+                            'groups'          => UiHtml::getFormSelectFieldOptions($this->getUserGroups(), [], ['multiple' => true]),
                             'type'            => ['type' => UiActiveForm::INPUT_HIDDEN, 'value' => 'system']
                     ];
         
@@ -56,5 +55,16 @@ class UserEditView extends \usni\library\views\MultiModelEditView
             return ['status', 'timezone', 'groups'];
         }
         return [];
+    }
+    
+    /**
+     * Get user groups
+     * @return array
+     */
+    public function getUserGroups()
+    {
+        $group              = new Group();
+        $group->created_by  = UsniAdaptor::app()->user->getUserModel()->id;
+        return $group->getMultiLevelSelectOptions('name', 0, '-', true, $this->shouldRenderOwnerCreatedModels());
     }
 }

@@ -15,6 +15,7 @@ use usni\library\modules\auth\views\AuthPermissionsSelectView;
 use usni\library\utils\FlashUtil;
 /**
  * PermissionController class file.
+ * 
  * @package usni\library\modules\auth\components
  */
 class PermissionController extends UiAdminController

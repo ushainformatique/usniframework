@@ -18,6 +18,7 @@ use usni\UsniAdaptor;
 use usni\library\utils\ArrayUtil;
 /**
  * ProfileEditView class file.
+ * 
  * @package usni\library\modules\users\views
  */
 class ProfileEditView extends UiTabbedEditView
@@ -27,7 +28,8 @@ class ProfileEditView extends UiTabbedEditView
      */
     public function getFormBuilderMetadata()
     {
-        $userView       = $this->renderSubView(UserEditView::className(), $this->model->user);
+        $userEditView   = UsniAdaptor::app()->getModule('users')->viewHelper->userEditView;
+        $userView       = $this->renderSubView($userEditView, $this->model->user);
         $personView     = $this->renderSubView(PersonEditView::className(), $this->model->person);
         $addressView    = $this->renderSubView(AddressEditView::className(), $this->model->address);
         $elements = [

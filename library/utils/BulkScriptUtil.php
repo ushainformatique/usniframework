@@ -65,6 +65,7 @@ class BulkScriptUtil
                 {
                     $confirmation
                     var idList = $('#{$gridViewId}').yiiGridView('getSelectedRows');
+                    console.log(idList);
                     if(idList == '')
                     {
                         alert('{$error}');
@@ -74,7 +75,7 @@ class BulkScriptUtil
                             'type'     : 'GET',
                             'dataType' : 'html',
                             'url'      : '{$url}',
-                            'data'     : {id : idList},
+                            'data'     : {id:idList},
                             'beforeSend':function()
                                          {
                                             $.fn.attachLoader('#{$gridViewId}');

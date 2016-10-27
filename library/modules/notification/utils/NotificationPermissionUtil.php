@@ -36,7 +36,6 @@ class NotificationPermissionUtil extends PermissionUtil
      */
     public static function getModelToExcludedPermissions()
     {
-         return [Notification::className() => ['create', 'update', 'delete', 'view', 'bulkedit', 'bulkdelete', 'updateother', 'viewother', 'deleteother']];
+         return [Notification::className() => ['create', 'update', 'delete', 'view', 'bulk-edit', 'bulk-delete', 'updateother', 'viewother', 'deleteother']];
     }
 }
-?>

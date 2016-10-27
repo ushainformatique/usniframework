@@ -516,7 +516,7 @@ abstract class UiAdminController extends UiBaseController
             $model              = $modelClass::findOne($id);
             $imageFieldName     = $this->getImageFieldName();
             $model->scenario    = 'deleteimage';
-            FileUploadUtil::deleteImage($model, $imageFieldName, 120, 120);
+            FileUploadUtil::deleteImage($model, $imageFieldName, 150, 150);
             $model->$imageFieldName = null;
             $model->save();
             

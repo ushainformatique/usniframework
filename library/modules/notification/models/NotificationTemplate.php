@@ -21,7 +21,7 @@ class NotificationTemplate extends TranslatableActiveRecord
 	public function rules()
 	{
 		return [
-                    [['type', 'notifykey', 'subject', 'content'],                   'required'],
+                    [['type', 'notifykey', 'subject', 'content'],                   'required', 'except' => 'bulkedit'],
                     [['notifykey'],  'unique', 'targetAttribute' => ['notifykey', 'type'], 'on' => 'create'],
                     ['notifykey',    'unique', 'targetAttribute' => ['notifykey', 'type'], 'filter' => ['!=', 'id', $this->id], 'on' => 'update'],
                     [['subject', 'content', 'type', 'notifykey', 'layout_id'],      'safe'],
