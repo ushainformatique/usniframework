@@ -18,7 +18,7 @@ class FileUtil extends \yii\helpers\FileHelper
      * @param string $content
      * @return void
      */
-    public static function writeFile($path, $fileName, $mode = 'wb', $content)
+    public static function writeFile($path, $fileName, $mode = 'wb', $content = null)
     {
         $fileName   = $path . '/' . $fileName;
         $fp         = fopen($fileName, $mode);
